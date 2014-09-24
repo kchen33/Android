@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.chenimage.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/annie" />
+
+    <Button
+        android:id="@+id/btnSimpleFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="137dp"
+        android:layout_marginLeft="60dp"
+        android:onClick="simple"
+        android:text="Totoro" />
+
+    <Button
+        android:id="@+id/btnTeemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnSimpleFragment"
+        android:layout_marginTop="112dp"
+        android:onClick="Teemo"
+        android:text="Teemo" />
+
+    <Button
+        android:id="@+id/btnKat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSimpleFragment"
+        android:layout_alignBottom="@+id/btnSimpleFragment"
+        android:layout_marginLeft="57dp"
+        android:layout_toRightOf="@+id/btnSimpleFragment"
+        android:onClick="Kat"
+        android:text="Kat" />
+
+    <Button
+        android:id="@+id/btnJinx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTeemo"
+        android:layout_alignBottom="@+id/btnTeemo"
+        android:layout_alignRight="@+id/btnKat"
+        android:onClick="Jinx"
+        android:text="Jinx" />
+
+</RelativeLayout>
